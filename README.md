@@ -1,2 +1,4 @@
-zlgGUI_LM3S8962
-===============
+zlgGUI
+=============
+
+A project using the ZLG GUI
