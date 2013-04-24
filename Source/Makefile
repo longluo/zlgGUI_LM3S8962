@@ -2,6 +2,7 @@
 #
 # Makefile - Rules for building the zlgGUI Application using zlgGUI.
 #
+#
 #******************************************************************************
 
 #
@@ -10,9 +11,9 @@
 PART=LM3S8962
 
 #
-# The base directory for the project.
+# The base directory for project.
 #
-ROOT=../
+ROOT=.
 
 #
 # Include the common make definitions.
@@ -37,10 +38,10 @@ IPATH+=./LM3S_Lib/inc
 IPATH+=./ZLG_GUI
 
 #
-# The default rule, which causes the Ethernet I/O Control Application using lwIP 1.3.2 to be built.
+# The default rule, which causes the zlgGUI Application using ZLG_GUI to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/zlgGUI.axf
+all: ${COMPILER}/zlggui.axf
 
 #
 # The rule to clean out all the build products.
@@ -57,24 +58,23 @@ ${COMPILER}:
 #
 # Rules for building the zlgGUI Application using ZLG_GUI.
 #
-${COMPILER}/zlgGUI.axf: ${COMPILER}/main.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/lcmdrv.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/rit128x96x4.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/ConvertColor.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/GUI_BASIC.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/GUI_StockC.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/loadbit.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/menu.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/spline.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/menu.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/windows.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/font5_7.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/FONT8_8.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/FONT24_32.o
-${COMPILER}/zlgGUI.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/zlgGUI.axf: ${ROOT}/Source/LM3S_Lib/DriverLib/libdriver.a
-${COMPILER}/zlgGUI.axf: zlgGUI_LM3S8962.ld
-SCATTERgcc_zlgGUI=zlgGUI_LM3S8962.ld
+${COMPILER}/zlggui.axf: ${COMPILER}/main.o
+${COMPILER}/zlggui.axf: ${COMPILER}/lcmdrv.o
+${COMPILER}/zlggui.axf: ${COMPILER}/rit128x96x4.o
+${COMPILER}/zlggui.axf: ${COMPILER}/ConvertColor.o
+${COMPILER}/zlggui.axf: ${COMPILER}/font5_7.o
+${COMPILER}/zlggui.axf: ${COMPILER}/FONT8_8.o
+${COMPILER}/zlggui.axf: ${COMPILER}/FONT24_32.o
+${COMPILER}/zlggui.axf: ${COMPILER}/GUI_BASIC.o
+${COMPILER}/zlggui.axf: ${COMPILER}/GUI_StockC.o
+${COMPILER}/zlggui.axf: ${COMPILER}/loadbit.o
+${COMPILER}/zlggui.axf: ${COMPILER}/menu.o
+${COMPILER}/zlggui.axf: ${COMPILER}/spline.o
+${COMPILER}/zlggui.axf: ${COMPILER}/windows.o
+${COMPILER}/zlggui.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/zlggui.axf: ${ROOT}/LM3S_Lib/DriverLib/libdriver.a
+${COMPILER}/zlggui.axf: zlggui.ld
+SCATTERgcc_zlggui=zlggui.ld
 ENTRY_zlgGUI=ResetISR
 
 #

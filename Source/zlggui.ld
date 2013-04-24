@@ -1,6 +1,7 @@
 /******************************************************************************
  *
- * WebServer_IO.ld - Linker configuration file for the project.
+ * zlggui.ld - Linker configuration file for zlgGUI project.
+ *
  *
  *****************************************************************************/
 
