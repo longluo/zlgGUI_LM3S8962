@@ -54,19 +54,19 @@ typedef double         fp64;                    /* double precision floating poi
 #include "rit128x96x4.h"
 
 
-#include    "GUI_CONFIG.H"
+#include    "GUI_CONFIG.h"
 #include    "rit128x96x4.h"
-#include    "LCMDRV.h"
-#include    "GUI_BASIC.H"
-#include    "GUI_STOCKC.H"
-#include    "FONT_MACRO.H"
-#include    "FONT5_7.H"
-#include    "FONT8_8.H"
-#include    "FONT24_32.H"
-#include    "LOADBIT.H"
-#include    "WINDOWS.H"
-#include    "MENU.H"
-#include    "spline.H"
+#include    "lcmdrv.h"
+#include    "GUI_BASIC.h"
+#include    "GUI_StockC.h"
+#include    "FONT_MACRO.h"
+#include    "FONT5_7.h"
+#include    "FONT8_8.h"
+#include    "FONT24_32.h"
+#include    "loadbit.h"
+#include    "windows.h"
+#include    "menu.h"
+#include    "spline.h"
 
 #endif /* __CONFIG_H */
 

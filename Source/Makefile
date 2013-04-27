@@ -62,7 +62,7 @@ ${COMPILER}/zlggui.axf: ${COMPILER}/main.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/lcmdrv.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/rit128x96x4.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/ConvertColor.o
-${COMPILER}/zlggui.axf: ${COMPILER}/font5_7.o
+${COMPILER}/zlggui.axf: ${COMPILER}/FONT5_7.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/FONT8_8.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/FONT24_32.o
 ${COMPILER}/zlggui.axf: ${COMPILER}/GUI_BASIC.o
@@ -75,7 +75,7 @@ ${COMPILER}/zlggui.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/zlggui.axf: ${ROOT}/LM3S_Lib/DriverLib/libdriver.a
 ${COMPILER}/zlggui.axf: zlggui.ld
 SCATTERgcc_zlggui=zlggui.ld
-ENTRY_zlgGUI=ResetISR
+ENTRY_zlggui=ResetISR
 
 #
 # Include the automatically generated dependency files.

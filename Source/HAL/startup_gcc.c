@@ -116,7 +116,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // CAN0
     IntDefaultHandler,                      // CAN1
     IntDefaultHandler,                      // CAN2
-    IntDefaultHandler,                 		// Ethernet
+    IntDefaultHandler,                      // Ethernet
     IntDefaultHandler                       // Hibernate
 };
 
