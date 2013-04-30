@@ -515,11 +515,11 @@ Image Symbol Table
     ..\..\Source\HAL\Oled\Src\rit128x96x4.c  0x00000000   Number         0  rit128x96x4.o ABSOLUTE
     ..\..\Source\HAL\startup_rvmdk.S         0x00000000   Number         0  startup_rvmdk.o ABSOLUTE
     ..\..\Source\ZLG_GUI\ConvertColor.c      0x00000000   Number         0  convertcolor.o ABSOLUTE
-    ..\..\Source\ZLG_GUI\FONT24_32.C         0x00000000   Number         0  font24_32.o ABSOLUTE
-    ..\..\Source\ZLG_GUI\FONT8_8.C           0x00000000   Number         0  font8_8.o ABSOLUTE
-    ..\..\Source\ZLG_GUI\GUI_BASIC.C         0x00000000   Number         0  gui_basic.o ABSOLUTE
-    ..\..\Source\ZLG_GUI\GUI_StockC.C        0x00000000   Number         0  gui_stockc.o ABSOLUTE
-    ..\..\Source\ZLG_GUI\font5_7.c           0x00000000   Number         0  font5_7.o ABSOLUTE
+    ..\..\Source\ZLG_GUI\FONT24_32.c         0x00000000   Number         0  font24_32.o ABSOLUTE
+    ..\..\Source\ZLG_GUI\FONT5_7.c           0x00000000   Number         0  font5_7.o ABSOLUTE
+    ..\..\Source\ZLG_GUI\FONT8_8.c           0x00000000   Number         0  font8_8.o ABSOLUTE
+    ..\..\Source\ZLG_GUI\GUI_BASIC.c         0x00000000   Number         0  gui_basic.o ABSOLUTE
+    ..\..\Source\ZLG_GUI\GUI_StockC.c        0x00000000   Number         0  gui_stockc.o ABSOLUTE
     ..\..\Source\ZLG_GUI\loadbit.c           0x00000000   Number         0  loadbit.o ABSOLUTE
     ..\..\Source\ZLG_GUI\menu.c              0x00000000   Number         0  menu.o ABSOLUTE
     ..\..\Source\ZLG_GUI\spline.c            0x00000000   Number         0  spline.o ABSOLUTE
@@ -918,15 +918,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-        64          4          8          2          0       1475   gui_stockc.o
-       336          8          0          0       6144       3015   lcmdrv.o
-       316         12          0          0          0       2346   loadbit.o
-       140         24         32          8          0       6234   main.o
-      1272         82        577          9          0       5863   rit128x96x4.o
-       656        636          0          0       1024        484   startup_rvmdk.o
+        64          4          8          2          0       1499   gui_stockc.o
+       336          8          0          0       6144       3035   lcmdrv.o
+       316         12          0          0          0       2366   loadbit.o
+       140         24         32          8          0       6274   main.o
+      1272         82        577          9          0       5895   rit128x96x4.o
+       656        636          0          0       1024        500   startup_rvmdk.o
 
     ----------------------------------------------------------------------
-      2784        766        650         20       7168      19417   Object Totals
+      2784        766        650         20       7168      19569   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          1          1          0          0   (incl. Padding)
 
@@ -982,8 +982,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4378        868        806         20       7268      30030   Grand Totals
-      4378        868        806         20       7268      30030   ELF Image Totals
+      4378        868        806         20       7268      30182   Grand Totals
+      4378        868        806         20       7268      30182   ELF Image Totals
       4378        868        806         20          0          0   ROM Totals
 
 ==============================================================================
